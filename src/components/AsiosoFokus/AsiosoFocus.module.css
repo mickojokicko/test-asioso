@@ -1,0 +1,78 @@
+.weDoDescription {
+  padding-top: 1rem;
+  width: 70%;
+  margin: 0 auto 100px;
+}
+
+.heading {
+  width: fit-content;
+
+  margin: 2rem auto;
+}
+
+/* */
+
+.cards {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  border: none;
+  box-shadow: 12px 12px 12px 2px rgb(68, 57, 57);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  min-height: 13rem;
+  margin: auto 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardContent {
+  color: #010108;
+  padding: 30px;
+}
+
+.hoverElement {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -100%;
+  font-size: 1rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: rgb(247, 249, 252);
+  position: absolute;
+  transition: 0.8s;
+  background-color: #9bed65;
+  height: 100%;
+  width: 100%;
+}
+
+.card:hover .hoverElement {
+  bottom: 0;
+  visibility: visible;
+}
+
+@media screen and (max-width: 860px) {
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .whatWeDo {
+    width: 90%;
+  }
+}
