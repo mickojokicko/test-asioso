@@ -8,7 +8,7 @@ export const News = function () {
   const [errMessage, setErrMessage] = useState(null);
   const [selectedArticle, setSelectedArticle] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  let [startIndex, setStartIndex] = useState(20);
+  let [startIndex, setStartIndex] = useState(0);
   const itemsPerPage = 3;
 
   const API_KEY = "7dc3f24354704719ab823cb3b3ca7bd3";
